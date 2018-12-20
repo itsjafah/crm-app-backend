@@ -5,6 +5,11 @@ class Api::V1::NotesController < ApplicationController
     render json: {notes: @notes}
   end
 
+  def show
+    @note = Note.find_by(id: params[:id])
+    render json: @note, status: :ok
+  end
+
   def create
     if (@note = Note.create(note_params))
       render json: @note, status: :created
@@ -17,6 +22,12 @@ class Api::V1::NotesController < ApplicationController
     @note = Note.find_by(id: params[:id])
     @note.update(note_params)
     render json: @note, status: 202
+  end
+
+  def destroy
+    @note = Note.find_by(id: params[:id])
+    @note.destroy
+    render json: @note, status: :ok
   end
 
   private
