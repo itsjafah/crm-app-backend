@@ -77,3 +77,14 @@ Note.create(body: "Call Ollie", user_id: 1, customer_id: 2)
 Note.create(body: "Call Max", user_id: 1, customer_id: 3)
 Note.create(body: "Call Scoti", user_id: 1, customer_id: 4)
 Note.create(body: "Call Sean for some lovin", user_id: 1, customer_id: 5)
+
+Order.create(user_id: 1, customer_id: 5, product_id: 1, quantity: 5, total: 50, date: "2018-01-02 01:00:00")
+
+Order.create(user_id: 1, customer_id: 5, product_id: 2, quantity: 5, total: 50, date: "2018-01-02 01:00:00")
+
+Order.create(user_id: 1, customer_id: 5, product_id: 3, quantity: 10, total: 120, date: "2018-01-02 01:00:00")
+
+
+OrderedProduct.create(order_id: 1, product_id: 1)
+OrderedProduct.create(order_id: 2, product_id: 2)
+OrderedProduct.create(order_id: 3, product_id: 3)
