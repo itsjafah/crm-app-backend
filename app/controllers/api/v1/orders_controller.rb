@@ -2,7 +2,7 @@ class Api::V1::OrdersController < ApplicationController
 
   def index
     @orders = Order.all
-    render json: { orders: @orders }
+    render json:  @orders
   end
 
   def show
@@ -27,6 +27,10 @@ class Api::V1::OrdersController < ApplicationController
     @order = Order.find_by(id: params[:id])
     @order.destroy
     render json: @order, status: :ok
+  end
+
+  def order_params
+    params.require(:order).permit(:user_id, :customer_id, :total)
   end
 
 

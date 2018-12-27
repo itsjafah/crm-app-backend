@@ -1,9 +1,8 @@
 class Api::V1::UsersController < ApplicationController
-  before_action :set_user, only: [:show, :edit, :update, :destroy]
 
   def index
     @users = User.all
-    render json: @users
+    render json: { users: @users }
   end
 
   def update
