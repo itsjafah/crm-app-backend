@@ -76,13 +76,49 @@ Note.create(body: "Call Max", user_id: 1, customer_id: 3)
 Note.create(body: "Call Scoti", user_id: 1, customer_id: 4)
 Note.create(body: "Call Sean for some lovin", user_id: 1, customer_id: 5)
 
-Order.create(user_id: 1, customer_id: 5, product_id: 1, quantity: 5, total: 50, date: "2018-01-02 01:00:00")
+Order.create(user_id: 1, customer_id: 5, total: 207, date: "2018-01-02 01:00:00")
 
-Order.create(user_id: 1, customer_id: 5, product_id: 2, quantity: 5, total: 50, date: "2018-01-02 01:00:00")
+Order.create(user_id: 1, customer_id: 4, total: 578, date: "2018-01-02 01:00:00")
+#
+Order.create(user_id: 1, customer_id: 3, total: 237, date: "2018-01-02 01:00:00")
 
-Order.create(user_id: 1, customer_id: 5, product_id: 3, quantity: 10, total: 120, date: "2018-01-02 01:00:00")
+Order.create(user_id: 1, customer_id: 2, total: 324, date: "2018-01-02 01:00:00")
+
+Order.create(user_id: 1, customer_id: 1, total: 743, date: "2018-01-02 01:00:00")
 
 
-OrderedProduct.create(order_id: 1, product_id: 1)
-OrderedProduct.create(order_id: 2, product_id: 2)
-OrderedProduct.create(order_id: 3, product_id: 3)
+OrderedProduct.create(order_id: 1, product_id: 1, quantity: 10)
+OrderedProduct.create(order_id: 1, product_id: 9, quantity: 1)
+OrderedProduct.create(order_id: 1, product_id: 18, quantity: 5)
+OrderedProduct.create(order_id: 1, product_id: 28, quantity: 2)
+OrderedProduct.create(order_id: 1, product_id: 36, quantity: 1)
+OrderedProduct.create(order_id: 1, product_id: 45, quantity: 2)
+
+
+OrderedProduct.create(order_id: 2, product_id: 2, quantity: 5)
+OrderedProduct.create(order_id: 2, product_id: 10, quantity: 2)
+OrderedProduct.create(order_id: 2, product_id: 19, quantity: 1)
+OrderedProduct.create(order_id: 2, product_id: 29, quantity: 3)
+OrderedProduct.create(order_id: 2, product_id: 37, quantity: 5)
+OrderedProduct.create(order_id: 2, product_id: 46, quantity: 2)
+
+OrderedProduct.create(order_id: 3, product_id: 3, quantity: 2)
+OrderedProduct.create(order_id: 3, product_id: 11, quantity: 2)
+OrderedProduct.create(order_id: 3, product_id: 20, quantity: 3)
+OrderedProduct.create(order_id: 3, product_id: 30, quantity: 1)
+OrderedProduct.create(order_id: 3, product_id: 38, quantity: 2)
+OrderedProduct.create(order_id: 3, product_id: 47, quantity: 5)
+
+OrderedProduct.create(order_id: 4, product_id: 4, quantity: 5)
+OrderedProduct.create(order_id: 4, product_id: 12, quantity: 1)
+OrderedProduct.create(order_id: 4, product_id: 21, quantity: 6)
+OrderedProduct.create(order_id: 4, product_id: 31, quantity: 3)
+OrderedProduct.create(order_id: 4, product_id: 39, quantity: 1)
+OrderedProduct.create(order_id: 4, product_id: 48, quantity: 2)
+
+OrderedProduct.create(order_id: 5, product_id: 5, quantity: 2)
+OrderedProduct.create(order_id: 5, product_id: 13, quantity: 10)
+OrderedProduct.create(order_id: 5, product_id: 22, quantity: 2)
+OrderedProduct.create(order_id: 5, product_id: 32, quantity: 1)
+OrderedProduct.create(order_id: 5, product_id: 40, quantity: 3)
+OrderedProduct.create(order_id: 5, product_id: 49, quantity: 1)
