@@ -6,6 +6,7 @@ class Api::V1::OrdersController < ApplicationController
   end
 
   def show
+    @order = Order.find_by(id: params[:id])
     render json: @order
   end
 
