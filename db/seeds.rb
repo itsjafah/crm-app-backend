@@ -6,13 +6,13 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-User.create(name: 'Jordan', email: 'jordan@jordan.com', password: 'jordan123', annual_goal: 50000)
+User.create(name: 'Jordan', email: 'jordan@jordan.com', password: 'jordan123', annual_goal: 5000000)
 
-Customer.create(name: "Bob's Store", address: "123 Street Lane", rank: 4, user_id: 1, annual_goal: 5000)
-Customer.create(name: "Ollie's Place", address: "456 Road Street", rank: 3, user_id: 1, annual_goal: 10000)
-Customer.create(name: "Max's Fun House", address: "1 Lane Street", rank: 5, user_id: 1, annual_goal: 2500)
-Customer.create(name: "Scoti's Toys", address: "007 Street Way", rank: 2, user_id: 1, annual_goal: 12500)
-Customer.create(name: "Sean's Shack", address: "711 Oh Yeah Way", rank: 1, user_id: 1, annual_goal: 20000)
+Customer.create(name: "Bob's Store", address: "123 Street Lane", rank: 4, user_id: 1, annual_goal: 500000, image: 'http://www.bobs-toyshop.com/files/IMG_6.jpg')
+Customer.create(name: "Ollie's Place", address: "456 Road Street", rank: 3, user_id: 1, annual_goal: 1000000, image: 'https://www.gannett-cdn.com/-mm-/fcf60b798167b1f9be29c26b991dff876c314959/c=0-0-298-224/local/-/media/2015/05/01/Louisville/Louisville/635660911113174164-Ollie-s.logo.jpg?width=534&height=401&fit=crop')
+Customer.create(name: "Max's Fun House", address: "1 Lane Street", rank: 5, user_id: 1, annual_goal: 250000, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHLowdUVNevqQ8HbHGW4TJ1ZZ3rzS_cAjZ3aob6fvvbQI4EnCe5A')
+Customer.create(name: "Scoti's Toys", address: "007 Street Way", rank: 2, user_id: 1, annual_goal: 1250000, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJFiEZ3xYBNAs-cbQJ6lCrmrUd9YiI-NWWLoj7HOE838ufrD9cXA')
+Customer.create(name: "Sean's Toy Shop", address: "711 Oh Yeah Way", rank: 1, user_id: 1, annual_goal: 2000000, image: 'https://i.ytimg.com/vi/7n0dfC14H7Y/maxresdefault.jpg')
 
 Product.create(user_id: 1, name: "Barbie", category: "Dolls", sku: 1, cost: 5, price: 10, image_url: 'https://slimages.macysassets.com/is/image/MCY/products/8/optimized/9989318_fpx.tif?op_sharpen=1&wid=1230&hei=1500&fit=fit,1&$filterxlrg$')
 Product.create(user_id: 1, name: "G.I. Joe", category: "Dolls", sku: 7, cost: 5, price: 10, image_url: 'https://aa1a5178aef33568e9c4-a77ea51e8d8892c1eb8348eb6b3663f6.ssl.cf5.rackcdn.com/p/full/476694f8-7811-4b40-b535-86d3498c8729.jpg')

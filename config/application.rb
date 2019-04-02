@@ -21,6 +21,7 @@ module Mod5ProjectBackend
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
+    config.time_zone = 'Eastern Time (US & Canada)'
 
     config.middleware.insert_before 0, Rack::Cors do
       allow do
@@ -38,5 +39,6 @@ module Mod5ProjectBackend
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
   end
 end
